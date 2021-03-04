@@ -1,0 +1,11 @@
+*{
+    background-color:  #ebf5fb;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+#display_clock{
+    font-size: 90px;
+}
