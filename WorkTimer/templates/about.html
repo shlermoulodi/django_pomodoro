@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{{site_title}}</title>
+</head>
+<body>
+{% load bootstrap4 %}
+{% bootstrap_css %}
+<div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Minimalist Pomodoro</a>
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link current-page" href="home.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link menuItem" href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <h1 class="text-secondary"> {{ site_title }}</h1>
+    <p class="text-dark">This minimalist Pomodoro timer was developed by {{ site_author }}.</p>
+    <p class="text-dark">Here is how it works:</p>
+    <ul>
+        <li>Start a pomodoro by clicking Start. Each Pomodoro round is 25 minutes.</li>
+        <li>Take a 5 minute break by clicking Break.</li>
+        <li>Reset the clock to 25 minutes by clicking Stop.</li>
+    </ul>
+    <p class="text-dark">I hope it will be a useful tool for managing your working time!</p>
+</div>
+</body>
+</html>
